@@ -34,7 +34,7 @@ This project is built using Django, Django REST Framework.
 
 git clone https://github.com/KrishnaShuklaDeveloper/Me-API-Playground.git
 
-
+**Actual repo link** - https://github.com/KrishnaShuklaDeveloper/Me-API-Playground
 
 cd Me-API-Playground
 
@@ -189,4 +189,5 @@ Hi, I’m Krishna Shukla
 
 
 **GitHub**: https://github.com/KrishnaShuklaDeveloper
+
 
