@@ -132,8 +132,7 @@ bio (TextField, optional)
 
 
 
-**Health Check**: http://127.0.0.1:8000/health/
-
+**Health Check**: http://127.0.0.1:8000/api/health/
 
 
 **Superuser Access**
@@ -189,5 +188,6 @@ Hi, I’m Krishna Shukla
 
 
 **GitHub**: https://github.com/KrishnaShuklaDeveloper
+
 
 
