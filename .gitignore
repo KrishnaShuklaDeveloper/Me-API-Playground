@@ -1,0 +1,29 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Django
+*.sqlite3
+/staticfiles/
+media/
+
+# IDEs
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Byte-compiled / cache
+*.egg-info/
+
+# Heroku
+Procfile
+runtime.txt
