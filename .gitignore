@@ -10,7 +10,6 @@ env/
 venv/
 
 # Django
-*.sqlite3
 /staticfiles/
 media/
 
@@ -27,3 +26,4 @@ media/
 # Heroku
 Procfile
 runtime.txt
+
