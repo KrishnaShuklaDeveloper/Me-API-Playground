@@ -7,6 +7,11 @@ from django.shortcuts import render
 from .models import Profile, Skill, Project
 from .serializers import ProfileSerializer, SkillSerializer, ProjectSerializer
 
+
+@api_view(["GET"])
+def home(request):
+    return Response({"message": "API is running!"})
+    
 def frontend(request):
     return render(request, "index.html")
 
@@ -104,3 +109,4 @@ def search(request):
         "skills": SkillSerializer(skl, many=True).data,
         "profiles": ProfileSerializer(prof, many=True).data,
     })
+
