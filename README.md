@@ -135,19 +135,13 @@ bio (TextField, optional)
 **Health Check**: http://127.0.0.1:8000/api/health/
 
 
-**Superuser Access**
+## Superuser Access (Local Setup)
 
+To access the Django admin panel, create your own superuser after setting up the project:
 
+```bash
+python manage.py createsuperuser
 
-For admin panel access, please use:
-
-
-
-Username: Krishna
-
-
-
-Password: Shuklaji87$
 
 
 
@@ -188,6 +182,7 @@ Hi, I’m Krishna Shukla
 
 
 **GitHub**: https://github.com/KrishnaShuklaDeveloper
+
 
 
 
