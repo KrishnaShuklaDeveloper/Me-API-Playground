@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #222;
+}
+
+#profile, #projects div, #skills div, #topSkills div {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#projects a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+#projects a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 8px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0f59c0;
+}
+
+body.dark-mode {
+    background-color: #181818;
+    color: #f1f1f1;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+    color: #f1f1f1;
+}
+
+body.dark-mode #profile,
+body.dark-mode #projects div,
+body.dark-mode #skills div,
+body.dark-mode #topSkills div {
+    background-color: #242424;
+    color: #e0e0e0;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.6);
+}
+
+body.dark-mode #projects a {
+    color: #66b3ff;
+}
+
+body.dark-mode #searchInput {
+    background-color: #2a2a2a;
+    border: 1px solid #555;
+    color: #fff;
+}
+
+body.dark-mode button {
+    background-color: #66b3ff;
+    color: black;
+}
+
+body.dark-mode button:hover {
+    background-color: #3399ff;
+}
