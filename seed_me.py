@@ -15,13 +15,7 @@ Skill.objects.all().delete()
 profile = Profile.objects.create(
     name="Krishna Shukla",
     email="krishnashukla9219448687@gmail.com",
-    education = (
-    "Bachelor of Technology (B.Tech) in Computer Science & Engineering - ",
-    "R.R. Institute of Modern Technology, Lucknow | 2025 | CGPA: 7.9/10\n",
-    "Higher Secondary (12th Grade) – Bal Nikunj Inter College, 2021 (86%)\n",
-    "Secondary (10th Grade) – Bal Nikunj Inter College, 2019 (81%)"
-)
-
+    education ="BTech(Computer Science & Engineering) CGPA: 7.9/10 ",
 
     summary=(
         "I’m a Full-Stack Developer with experience building real-world projects like a Voting Management System, Library Management System. I work with technologies such as Python & Django, PHP (Laravel), JavaScript, React, and SQL databases, and enjoy creating applications that are both efficient and user-friendly. From designing responsive UIs to building secure APIs and handling database logic, I take ownership of the full development cycle. I’ve also integrated features like live charts, authentication, dark/light themes, and PDF/Excel exports in my projects. I enjoy problem-solving, experimenting with new tools, and continuously improving my skills to deliver impactful solutions."
@@ -65,6 +59,7 @@ project3 = Project.objects.create(
 project3.skills.add(python, django, javascript, css)
 
 print("✅ Seeding complete: Profile, Projects, Skills added!")
+
 
 
 
