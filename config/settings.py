@@ -21,6 +21,7 @@ DEBUG = os.environ.get("DEBUG", "False") == "True"
 ALLOWED_HOSTS = ["me-api-playground-x0q1.onrender.com", "localhost", "127.0.0.1"]
 
 
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -94,5 +95,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # CORS (safe defaults)
 CORS_ALLOWED_ORIGINS = os.environ.get("CORS_ALLOWED_ORIGINS", "").split(",") if os.environ.get("CORS_ALLOWED_ORIGINS") else []
 CORS_ALLOW_ALL_ORIGINS = DEBUG
+
 
 
