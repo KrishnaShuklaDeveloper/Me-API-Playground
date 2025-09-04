@@ -6,12 +6,10 @@ django.setup()
 
 from api.models import Profile, Project, Skill
 
-# Clear old data
 Profile.objects.all().delete()
 Project.objects.all().delete()
 Skill.objects.all().delete()
 
-# Create Profile
 profile = Profile.objects.create(
     name="Krishna Shukla",
     email="krishnashukla9219448687@gmail.com",
@@ -23,7 +21,6 @@ profile = Profile.objects.create(
     links={"github": "https://github.com/KrishnaShuklaDeveloper", "linkedin": "https://www.linkedin.com/in/krishna-shukla-1b8834241/"}
 )
 
-# Create Skills
 python = Skill.objects.create(name="Python", level=5)
 django = Skill.objects.create(name="Django", level=4)
 html = Skill.objects.create(name="HTML", level=5)
@@ -33,7 +30,6 @@ javascript = Skill.objects.create(name="JavaScript", level=3)
 php = Skill.objects.create(name="PHP", level=3)
 laravel = Skill.objects.create(name="Laravel", level=3)
 
-# Create Projects
 project1 = Project.objects.create(
     profile=profile,
     title="Digital Library Management System",
@@ -61,6 +57,7 @@ project3.skills.add(python, django, javascript, css)
 
 
 print("✅ Seeding complete: Profile, Projects, Skills added!")
+
 
 
 
