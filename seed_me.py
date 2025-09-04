@@ -22,16 +22,9 @@ profile = Profile.objects.create(
         "Secondary (10th Grade) – Bal Nikunj Inter College, 2019 (81%)"
     ),
     summary=(
-        "I’m a Full-Stack Developer with experience building real-world projects "
-        "like a Voting Management System, Library Management System. I work with "
-        "technologies such as Python & Django, PHP (Laravel), JavaScript, React, "
-        "and SQL databases, and enjoy creating applications that are both efficient "
-        "and user-friendly."
+        "I’m a Full-Stack Developer with experience building real-world projects like a Voting Management System, Library Management System. I work with technologies such as Python & Django, PHP (Laravel), JavaScript, React, and SQL databases, and enjoy creating applications that are both efficient and user-friendly. From designing responsive UIs to building secure APIs and handling database logic, I take ownership of the full development cycle. I’ve also integrated features like live charts, authentication, dark/light themes, and PDF/Excel exports in my projects. I enjoy problem-solving, experimenting with new tools, and continuously improving my skills to deliver impactful solutions."
     ),
-    links={
-        "GitHub": "https://github.com/KrishnaShuklaDeveloper",
-        "LinkedIn": "https://linkedin.com/in/krishnashukla",
-    },
+    links={"github": "https://github.com/KrishnaShuklaDeveloper", "linkedin": "https://www.linkedin.com/in/krishna-shukla-1b8834241/"}
 )
 
 # Create Skills
@@ -70,3 +63,4 @@ project3 = Project.objects.create(
 project3.skills.add(python, django, javascript, css)
 
 print("✅ Seeding complete: Profile, Projects, Skills added!")
+
