@@ -16,9 +16,9 @@ profile = Profile.objects.create(
     name="Krishna Shukla",
     email="krishnashukla9219448687@gmail.com",
     education = (
-    "Bachelor of Technology (B.Tech) in Computer Science & Engineering - "
-    "R.R. Institute of Modern Technology, Lucknow | 2025 | CGPA: 7.9/10\n"
-    "Higher Secondary (12th Grade) – Bal Nikunj Inter College, 2021 (86%)\n"
+    "Bachelor of Technology (B.Tech) in Computer Science & Engineering - ",
+    "R.R. Institute of Modern Technology, Lucknow | 2025 | CGPA: 7.9/10\n",
+    "Higher Secondary (12th Grade) – Bal Nikunj Inter College, 2021 (86%)\n",
     "Secondary (10th Grade) – Bal Nikunj Inter College, 2019 (81%)"
 )
 
@@ -65,6 +65,7 @@ project3 = Project.objects.create(
 project3.skills.add(python, django, javascript, css)
 
 print("✅ Seeding complete: Profile, Projects, Skills added!")
+
 
 
 
