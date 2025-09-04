@@ -6,10 +6,12 @@ django.setup()
 
 from api.models import Profile, Project, Skill
 
+# Clear old data
 Profile.objects.all().delete()
 Project.objects.all().delete()
 Skill.objects.all().delete()
 
+# Create Profile
 profile = Profile.objects.create(
     name="Krishna Shukla",
     email="krishnashukla9219448687@gmail.com",
@@ -24,30 +26,30 @@ profile = Profile.objects.create(
         "like a Voting Management System, Library Management System. I work with "
         "technologies such as Python & Django, PHP (Laravel), JavaScript, React, "
         "and SQL databases, and enjoy creating applications that are both efficient "
-        "and user-friendly. From designing responsive UIs to building secure APIs and "
-        "handling database logic, I take ownership of the full development cycle. "
-        "I’ve also integrated features like live charts, authentication, dark/light "
-        "themes, and PDF/Excel exports in my projects. I enjoy problem-solving, "
-        "experimenting with new tools, and continuously improving my skills to "
-        "deliver impactful solutions."
+        "and user-friendly."
     ),
-    links="GitHub | LinkedIn",
+    links={
+        "GitHub": "https://github.com/KrishnaShuklaDeveloper",
+        "LinkedIn": "https://linkedin.com/in/krishnashukla",
+    },
 )
 
-python = Skill.objects.create(profile=profile, name="Python", rating=5)
-django = Skill.objects.create(profile=profile, name="Django", rating=4)
-html = Skill.objects.create(profile=profile, name="HTML", rating=5)
-css = Skill.objects.create(profile=profile, name="CSS", rating=4)
-sql = Skill.objects.create(profile=profile, name="SQL", rating=4)
-javascript = Skill.objects.create(profile=profile, name="JavaScript", rating=3)
-php = Skill.objects.create(profile=profile, name="PHP", rating=3)
-laravel = Skill.objects.create(profile=profile, name="Laravel", rating=3)
+# Create Skills
+python = Skill.objects.create(name="Python", level=5)
+django = Skill.objects.create(name="Django", level=4)
+html = Skill.objects.create(name="HTML", level=5)
+css = Skill.objects.create(name="CSS", level=4)
+sql = Skill.objects.create(name="SQL", level=4)
+javascript = Skill.objects.create(name="JavaScript", level=3)
+php = Skill.objects.create(name="PHP", level=3)
+laravel = Skill.objects.create(name="Laravel", level=3)
 
+# Create Projects
 project1 = Project.objects.create(
     profile=profile,
     title="Digital Library Management System",
     description="Library management system using Django",
-    link="https://github.com/KrishnaShuklaDeveloper/Digital-Library-Management-System",
+    links={"GitHub": "https://github.com/KrishnaShuklaDeveloper/Digital-Library-Management-System"},
 )
 project1.skills.add(python, django, html)
 
@@ -55,7 +57,7 @@ project2 = Project.objects.create(
     profile=profile,
     title="Admin-Controlled Voting System",
     description="Secure voting system built with Django",
-    link="https://github.com/KrishnaShuklaDeveloper/Voting-System",
+    links={"GitHub": "https://github.com/KrishnaShuklaDeveloper/Voting-System"},
 )
 project2.skills.add(django, javascript, html)
 
@@ -63,7 +65,7 @@ project3 = Project.objects.create(
     profile=profile,
     title="FitLife and Wellness Information Portal",
     description="Health & fitness portal with full-stack features",
-    link="https://github.com/KrishnaShuklaDeveloper/FitLife-Portal",
+    links={"GitHub": "https://github.com/KrishnaShuklaDeveloper/FitLife-Portal"},
 )
 project3.skills.add(python, django, javascript, css)
 
