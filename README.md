@@ -22,6 +22,21 @@ This project is built using Django, Django REST Framework.
 
 
 
+**Project Hosted on Render** 
+
+**To see output** - https://me-api-playground-kn58.onrender.com/
+
+**To check API's**
+
+**Health Check**- https://me-api-playground-kn58.onrender.com/api/health/
+
+**Profiles**- https://me-api-playground-kn58.onrender.com/api/profiles/
+
+**Projects**- https://me-api-playground-kn58.onrender.com/api/projects/
+
+**Skills**- https://me-api-playground-kn58.onrender.com/api/skills/
+
+
 **Setup**
 
 
@@ -182,6 +197,7 @@ Hi, I’m Krishna Shukla
 
 
 **GitHub**: https://github.com/KrishnaShuklaDeveloper
+
 
 
 
