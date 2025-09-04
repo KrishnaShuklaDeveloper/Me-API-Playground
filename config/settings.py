@@ -67,7 +67,7 @@ DATABASES = {
     "default": dj_database_url.config(
         default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",
         conn_max_age=600,
-        ssl_require=False,
+        ssl_require=os.environ.get("DATABASE_SSL", "False") == "True",
     )
 }
 
@@ -86,10 +86,11 @@ USE_TZ = True
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [BASE_DIR / "api" / "static"]
 STATIC_ROOT = BASE_DIR / "staticfiles"
-
-
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+# CORS (safe defaults)
 CORS_ALLOWED_ORIGINS = os.environ.get("CORS_ALLOWED_ORIGINS", "").split(",") if os.environ.get("CORS_ALLOWED_ORIGINS") else []
+CORS_ALLOW_ALL_ORIGINS = DEBUG
+
