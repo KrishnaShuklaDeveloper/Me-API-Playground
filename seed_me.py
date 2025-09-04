@@ -38,7 +38,7 @@ project1 = Project.objects.create(
     profile=profile,
     title="Digital Library Management System",
     description="Library management system using Django",
-    links={"project": "https://github.com/KrishnaShuklaDeveloper/Digital-Library-Management-System"},
+    links="https://github.com/KrishnaShuklaDeveloper/Digital-Library-Management-System",
 )
 project1.skills.add(python, django, html)
 
@@ -46,7 +46,7 @@ project2 = Project.objects.create(
     profile=profile,
     title="Admin-Controlled Voting System",
     description="Secure voting system built with Django",
-    links={"project": "https://github.com/KrishnaShuklaDeveloper/Admin-Controlled-Voting-System"},
+    links="https://github.com/KrishnaShuklaDeveloper/Admin-Controlled-Voting-System",
 )
 project2.skills.add(django, javascript, html)
 
@@ -54,12 +54,14 @@ project3 = Project.objects.create(
     profile=profile,
     title="FitLife and Wellness Information Portal",
     description="Health & fitness portal with full-stack features",
-    links={"project": "https://github.com/KrishnaShuklaDeveloper/FitLife-and-Wellness-Information-Portal/tree/main/Health%20and%20fitness"},
+    links="https://github.com/KrishnaShuklaDeveloper/FitLife-and-Wellness-Information-Portal/tree/main/Health%20and%20fitness",
 )
 project3.skills.add(python, django, javascript, css)
 
 
+
 print("✅ Seeding complete: Profile, Projects, Skills added!")
+
 
 
 
