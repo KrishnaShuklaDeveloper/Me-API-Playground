@@ -18,9 +18,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY", "dev-secret-key")
 DEBUG = os.environ.get("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = os.environ.get(
-    "ALLOWED_HOSTS", "me-api-playground-x0q1.onrender.com,localhost,127.0.0.1"
-).split(",")
+ALLOWED_HOSTS = [
+    "me-api-playground-kn58.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -98,3 +100,4 @@ CORS_ALLOWED_ORIGINS = (
     if os.environ.get("CORS_ALLOWED_ORIGINS")
     else []
 )
+
